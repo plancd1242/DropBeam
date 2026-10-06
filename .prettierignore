@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-electron
+release
+.wrangler
+.artifacts
+package-lock.json
+coverage

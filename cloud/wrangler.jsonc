@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "dropbeam-cloud",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "send_metrics": false,
+  "durable_objects": { "bindings": [{ "name": "REQUEST_GATE", "class_name": "RequestGate" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["RequestGate"] }],
+  "observability": { "enabled": false },
+}
